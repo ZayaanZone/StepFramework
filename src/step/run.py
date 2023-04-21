@@ -1,7 +1,7 @@
 import sys
+from step import StepFrameWork
 
 
 def run_cli():
-    print("Hello World")
     args = sys.argv[1:]
-    print(args)
+    StepFrameWork().run(args)
