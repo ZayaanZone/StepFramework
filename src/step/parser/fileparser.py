@@ -1,4 +1,4 @@
-from .runner import Runner
+from step.runner.filerunner import Runner
 
 
 class FileParser:

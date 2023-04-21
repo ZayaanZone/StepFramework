@@ -1,0 +1,2 @@
+class BuiltIn:
+    pass
