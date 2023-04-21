@@ -8,7 +8,7 @@ Introduction
 ------------
 
 `Step Framework <https://github.com/SanaurAsif/Step>`_ |r| is a generic open source
-automation framework for run tests as steps. It has simple plain
+automation framework to run tests as steps. It has simple plain
 text syntax and it can be extended easily with generic and custom libraries.
 
 Step Framework is operating system and application independent. It is
