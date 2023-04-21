@@ -2,6 +2,7 @@ import sys
 from step import StepFrameWork
 
 
-def run_cli():
-    args = sys.argv[1:]
-    StepFrameWork().run(args)
+def run_cli(args: list = None):
+    if args is None:
+        args = sys.argv[1:]
+    return StepFrameWork().run(args)
