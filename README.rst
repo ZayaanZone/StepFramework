@@ -45,32 +45,32 @@ https://github.com/SanaurAsif/Step.
 
 .. code:: stepframework
 
-*** Continous ***
-Condition:
-    Match Image    ${IMAGE_PATH}/images/condition.png    0.9
+    *** Continous ***
+    Condition:
+        Match Image    ${IMAGE_PATH}/images/condition.png    0.9
 
-Then:
-    Break Steps
-
-Else:
-    Continue
-
-
-*** Settings ***
-Keyword            keywords.py
-
-
-*** Steps ***
-Step 1
-    Add Image    ${IMAGE_PATH}/images/condition.png
-
-Step 2
-    ${result} = Check Image Match   ${IMAGE_PATH}/images/condition.png    0.9
-    If   ${result} == True
+    Then:
         Break Steps
-    Else
-        Start Step   Step 1
-    End
+
+    Else:
+        Continue
+
+
+    *** Settings ***
+    Keyword            keywords.py
+
+
+    *** Steps ***
+    Step 1
+        Add Image    ${IMAGE_PATH}/images/condition.png
+
+    Step 2
+        ${result} = Check Image Match   ${IMAGE_PATH}/images/condition.png    0.9
+        If   ${result} == True
+            Break Steps
+        Else
+            Start Step   Step 1
+        End
 
 Usage
 -----
