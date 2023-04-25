@@ -45,24 +45,32 @@ https://github.com/SanaurAsif/Step.
 
 .. code:: stepframework
 
-    *** Continous ***
-    Log to console    time
+*** Continous ***
+Condition:
+    Match Image    ${IMAGE_PATH}/images/condition.png    0.9
 
-    *** Settings ***
-    Documentation     A test suite with a single test for valid login.
-    ...
-    ...               This test has a workflow that is created using keywords in
-    ...               the imported resource file.
-    Resource          login.resource
+Then:
+    Break Steps
 
-    *** Test Cases ***
-    Valid Login
-        Open Browser To Login Page
-        Input Username    demo
-        Input Password    mode
-        Submit Credentials
-        Welcome Page Should Be Open
-        [Teardown]    Close Browser
+Else:
+    Continue
+
+
+*** Settings ***
+Keyword            keywords.py
+
+
+*** Steps ***
+Step 1
+    Add Image    ${IMAGE_PATH}/images/condition.png
+
+Step 2
+    ${result} = Check Image Match   ${IMAGE_PATH}/images/condition.png    0.9
+    If   ${result} == True
+        Break Steps
+    Else
+        Start Step   Step 1
+    End
 
 Usage
 -----
