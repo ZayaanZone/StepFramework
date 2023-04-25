@@ -5,7 +5,7 @@ __version__ = "0.1.0"
 __author__ = "Sanaur Asif"
 __email__ = "sanaurasif2@gmail.com"
 
-from .parser import FileParser
+from step.parser.fileparser import FileParser
 
 
 class StepFrameWork:
@@ -16,10 +16,10 @@ class StepFrameWork:
         if args is None:
             args = self.args
         _parser = FileParser(args)
-        runner = _parser.parse()
-        runner.run()
+        return _parser.parse()
 
     def run(self, args: list = None):
         if args is None:
             args = self.args
-        self.parse_args(args)
+        runner = self.parse_args(args)
+        return runner.run()

@@ -10,7 +10,8 @@ class Finder:
         if dataset is None:
             dataset = self.dataset
         const = []
-        pass
+        for lineno, data in dataset:
+            print(data)
 
     def find_settings(self, dataset: list = None):
         if dataset is None:

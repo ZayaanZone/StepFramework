@@ -7,7 +7,7 @@ Step Framework
 Introduction
 ------------
 
-`Step Framework <https://github.com/SanaurAsif/Step>`_  is a generic open source
+`Step Framework <https://github.com/SanaurAsif/StepFramework>`_  is a generic open source
 automation framework to run tests as steps. It has simple plain
 text syntax and it can be extended easily with generic and custom libraries.
 
@@ -33,7 +33,7 @@ Installation
 If you already have Python_ with `pip <https://pip.pypa.io>`_ installed,
 you can simply run::
 
-    pip install git+https://github.com/SanaurAsif/Step
+    pip install git+https://github.com/SanaurAsif/StepFramework
 
 
 Example
@@ -41,7 +41,7 @@ Example
 
 Step is a simple example test case for testing login to some system.
 You can find more examples with links to related demo projects from
-https://github.com/SanaurAsif/Step.
+https://github.com/SanaurAsif/StepFramework.
 
 .. code:: stepframework
 

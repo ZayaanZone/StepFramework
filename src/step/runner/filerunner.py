@@ -1,5 +1,5 @@
 import os
-from step.builder import Builder
+from step.builder.builder import Builder
 
 
 class Runner:
