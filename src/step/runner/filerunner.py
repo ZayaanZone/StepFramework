@@ -15,3 +15,12 @@ class Runner:
 
         builder = Builder(path)
         const, settings, steps = builder.build()
+
+        if const is not None:
+            const.execute()
+        if settings is not None:
+            settings.execute()
+        if steps is None:
+            raise ValueError("No steps found")
+        else:
+            steps.execute()
