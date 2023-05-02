@@ -10,7 +10,7 @@ class Builder:
             path = self.path
         with open(path, "r") as source:
             lines = source.readlines()
-            dataset = [(lineno, line) for lineno, line in enumerate(lines, start=1)]
+            dataset = [(lineno, line.strip("\n").strip("\t").strip()) for lineno, line in enumerate(lines, start=1)]
             source.close()
         finder = Finder(dataset)
         const = finder.find_const()

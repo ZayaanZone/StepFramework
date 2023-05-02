@@ -8,4 +8,7 @@ class ConstBuilder:
         self.stat_line = start_line
         self.end_line = end_line
 
-    
+    def execute(self):
+        lines = self.dataset[self.stat_line: self.end_line]
+        for lineno, line in lines:
+            print(line)

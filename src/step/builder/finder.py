@@ -24,6 +24,7 @@ class Finder:
             for lineno, data in dataset
             if data == self.settings_keyword or data == self.steps_keyword
         ]
+        print(linenos, linenosend)
 
         if len(linenos) > 1:
             raise ValueError("Multiple Continous Declarations Found")
@@ -34,10 +35,9 @@ class Finder:
         end_line = None
 
         for linenoend in linenosend:
-            if linenoend < linenoend:
-                continue
-            else:
-                end_line = linenoend
+            if linenoend > start_line:
+                end_line = linenoend - 1
+                break
 
         if end_line is None:
             end_line = len(dataset)
@@ -65,10 +65,9 @@ class Finder:
         end_line = None
 
         for linenoend in linenosend:
-            if linenoend < linenoend:
-                continue
-            else:
-                end_line = linenoend
+            if linenoend > start_line:
+                end_line = linenoend - 1
+                break
 
         if end_line is None:
             end_line = len(dataset)
@@ -96,10 +95,9 @@ class Finder:
         end_line = None
 
         for linenoend in linenosend:
-            if linenoend < linenoend:
-                continue
-            else:
-                end_line = linenoend
+            if linenoend > start_line:
+                end_line = linenoend - 1
+                break
 
         if end_line is None:
             end_line = len(dataset)
