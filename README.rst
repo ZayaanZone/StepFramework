@@ -1,4 +1,4 @@
-**ROCX 2.0
+ROCX 2.0
 ===============
 
 .. contents::
@@ -31,7 +31,7 @@ Installation
 ------------
 
 If you already have Python_ with `pip <https://pip.pypa.io>`_ installed,
-you can simply run::
+you can simply run:
 
    ```pip install git+https://github.com/SanaurAsif/ROCX```
 
