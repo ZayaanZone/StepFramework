@@ -1,8 +1,14 @@
 ROCX 2.0
 ===============
 
-.. contents::
-   :local:
+## Table of Contents
+**[Introduction Instructions](#installation-instructions)**<br>
+**[Installation](#usage-instructions)**<br>
+**[Usage](#troubleshooting)**<br>
+**[Support and Contact](#compatibility)**<br>
+**[Contributing](#notes-and-miscellaneous)**<br>
+**[License and Trademark](#building-the-extension-bundles)**<br>
+
 
 Introduction
 ------------
@@ -31,7 +37,7 @@ Installation
 ------------
 
 If you already have Python_ with `pip <https://pip.pypa.io>`_ installed,
-you can simply run:
+you can simply run::
 
    ```pip install git+https://github.com/SanaurAsif/ROCX```
 
@@ -68,4 +74,3 @@ ROCX 2.0 trademark is owned by `Root Of Cyber`_.
 __ http://apache.org/licenses/LICENSE-2.0
 __ http://creativecommons.org/licenses/by/3.0
 
-.. |r| unicode:: U+00AE**
