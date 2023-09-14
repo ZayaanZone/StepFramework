@@ -33,7 +33,7 @@ Installation
 If you already have Python_ with `pip <https://pip.pypa.io>`_ installed,
 you can simply run::
 
-    pip install git+https://github.com/SanaurAsif/StepFramework
+    `pip install git+https://github.com/SanaurAsif/StepFramework`
 
 
 Example
