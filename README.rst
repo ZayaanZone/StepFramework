@@ -1,4 +1,4 @@
-ROCX 2.0
+**ROCX 2.0
 ===============
 
 .. contents::
@@ -68,4 +68,4 @@ ROCX 2.0 trademark is owned by `Root Of Cyber`_.
 __ http://apache.org/licenses/LICENSE-2.0
 __ http://creativecommons.org/licenses/by/3.0
 
-.. |r| unicode:: U+00AE
+.. |r| unicode:: U+00AE**
